@@ -27,7 +27,7 @@
           >
           <ul class="nav-list list">
             <li class="nav-list-item">
-              <a class="nav-list-link link" href="">Студия</a>
+              <a class="nav-list-link active link" href="index.html">Студия</a>
             </li>
             <li class="nav-list-item">
               <a class="nav-list-link link" href="portfolio.html">Портфолио</a>
@@ -65,7 +65,9 @@
               <h1 class="main-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
             </li>
             <li class="button">
-              <button class="button-hero" type="button">Заказать услугу</button>
+              <button class="button-hero" type="button" data-modal-open>
+                Заказать услугу
+              </button>
             </li>
           </ul>
         </div>
@@ -494,5 +496,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-icon" width="11" height="11">
+            <use href="./images/sprite.svg#icon-vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
